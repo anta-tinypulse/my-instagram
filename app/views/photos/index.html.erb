@@ -1,0 +1,22 @@
+<h1>Hello World</h1>
+
+<% @photos.each do |p| %>
+<div class="card">
+  <%= image_tag(p.url, alt: "photo", class: "card-img-top") %>
+
+  <div class="card-block">
+    <h4 class="card-title"><%= p.username %></h4>
+    <p class="card-text"><%= p.caption %></p>
+  </div>
+
+  <ul class="list-group list-group-flush">
+    <% p.comments.each do |c| %>
+      <li class="list-group-item"><strong><%= c.username %></strong><br/><%= c.cmt_text %></li>
+   <% end %>
+  </ul>
+  <!--<div class="card-block">-->
+    <!--<a href="#" class="card-link">Card link</a>-->
+    <!--<a href="#" class="card-link">Another link</a>-->
+  <!--</div>-->
+</div>
+<% end %>

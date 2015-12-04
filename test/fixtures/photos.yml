@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  username: Nam Nguyen
+  caption: This is a nice picture
+  likes_count: 100
+  url: http://lorempixel.com/400/200/sports
+
+two:
+  username: Hai Le
+  caption: Another picture
+  likes_count: 112
+  url: http://lorempixel.com/400/200/lunch
